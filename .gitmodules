@@ -1,0 +1,3 @@
+[submodule "GPUPolynomials.jl"]
+	path = GPUPolynomials.jl
+	url = https://github.com/alexp616/GPUPolynomials.jl.git
