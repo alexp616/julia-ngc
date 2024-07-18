@@ -4,6 +4,8 @@ FROM $IMAGE
 ARG JULIA_RELEASE=1.10
 ARG JULIA_VERSION=1.10.3
 
+# vim
+RUN apt-get update && apt-get install -y vim
 
 # julia
 
@@ -37,7 +39,6 @@ RUN JULIA_DEPOT_PATH=/usr/local/share/julia \
 # however, for that script to run, we need to start with only the system depot active.
 ENV JULIA_DEPOT_PATH=/usr/local/share/julia
 COPY startup.jl /usr/local/share/julia/config/
-
 
 # user environment
 
